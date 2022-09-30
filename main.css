@@ -1,0 +1,257 @@
+::selection {
+  background: #ecc5fb;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #cea8dd;
+  text-decoration-thickness: 0.2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Reem Kufi Ink", sans-serif;
+}
+
+button {
+  background-color: #ecc5fb;
+  border-style: none;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px #00002625;
+}
+
+button:hover {
+  background-color: #cea8dd;
+}
+
+button:active {
+  background-color: #faf4b7;
+}
+
+/* header section */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+}
+
+.header-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.header-container li {
+  list-style: none;
+  padding: 0 2% 0 0;
+  margin: 0;
+}
+
+.header-container h3 {
+  margin: 0;
+}
+
+/* hero section */
+
+.hero-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(#ffffff, #b5eee4, #ffffff);
+  height: 70vh;
+  border-radius: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.welcome-statement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10%;
+}
+
+.welcome-statement h1 {
+  margin-bottom: 1rem;
+}
+
+.hero-image {
+  height: 40vh;
+  width: 20vw;
+}
+
+/* projects section */
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  flex-basis: 24%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px #00002625;
+}
+.project img {
+  width: 25rem;
+  height: 15rem;
+  object-fit: scale-down;
+}
+
+.project img:hover {
+  transition: 0.2s;
+  filter: blur(1px);
+}
+
+.project h3 {
+  box-shadow: none;
+  align-items: center;
+}
+
+.project p {
+  padding: 1rem;
+}
+
+/* contact me section */
+
+.contact-me-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #faf4b7;
+  border-radius: 15px;
+  height: 50vh;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.contact-me {
+  width: 1fr;
+  padding-left: 20%;
+}
+
+.about-me {
+  width: 1fr;
+  word-wrap: break-word;
+}
+
+.about-me p {
+  margin-bottom: 1rem;
+}
+
+.lang-list-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.lang-list-container li {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 11rem;
+    height: 4rem;
+  }
+
+  /*hero section*/
+  .hero-image {
+    height: 15vh;
+    width: 20vw;
+  }
+
+  .hero-container {
+    height: 50vh;
+  }
+
+  /*projects*/
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .projects {
+    justify-content: center;
+    padding: 0;
+  }
+
+  /*about me */
+
+  .about-me p {
+    margin-bottom: 1rem;
+  }
+
+  .lang-list-container li {
+    font-size: 1rem;
+  }
+}
