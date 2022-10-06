@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="index.js"></script>
     <title>Jonathan - Aspiring Web Developer</title>
   </head>
@@ -28,7 +31,9 @@
         <div class='hero-container'>
         <div class='welcome-statement'>
           <h1>Hi, I'm Jonathan.<br> An aspiring Web Developer</h1>
-          <p>I've been learning to be a Web developer</p>
+          <div>
+            <p>I've been learning to be a Web developer</p>
+          </div>
           <a href='#projects'><button><h3>See my Projects</h3></button></a>
         </div>
         <div>
@@ -41,26 +46,36 @@
           <h2>Projects</h2>
           <div class='projects'>
             <div class='project'>
-              <h3 class='project'>Minesweeper</h3>
+              <h2 class='project'>Minesweeper</h2>
               <a href='https://www.github.com/jonathanwears/minesweeper'><img src='./images/minesweeper-img.png'></img></a>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              <p>The classic game Minesweeper.<br> A tile identifies if the tile to its left and right and up and down has a mine and increments the displayed clicked tile number. You win if all mines are flagged and all other tiles are clicked.
+                <br>Uses React and Vite.
+              </p> 
             </div>
             <div class='project'>
-              <h3 class='project'>Counters</h3>
+              <h2 class='project'>Counters</h2>
               <a href='https://www.github.com/jonathanwears/HelperApp'><img src='./images/counting-project-img.png'></img></a>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              <p>Counters is a counting app using React Native, currently used to aid me in my current work. It has several counters that are saved to local storage.
+                <br>Uses React Native, Expo, Zustand
+                </p> 
 
             </div>
             <div class='project'>
-              <h3 class='project'>Flashcards</h3>
+              <h2 class='project'>Flashcards</h2>
               <a href='https://www.github.com/jonathanwears/flashcards'><img src='./images/flashcards-img1.png'></img></a>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              <p>
+                Flashcards was created from an idea to have digital language cards. Specifically English and German. Currently you can have a database of German words which ‘flip’ when clicked to the English word. A gamified version is a work in progress.
+                <br>
+                Flashcards connects through an API created by me (dbApi) to a Mongo database. 
+               <br> Uses React, Webpack, Babel and ChakraUI.
+                </p> 
 
             </div>
             <div class='project'>
-              <h3 class='project'>Project Four</h3>
+              <h2 class='project'>dbApi</h2>
               <a href='https://www.github.com/jonathanwears/dbApi'><img src='./images/db-api-img.png'></img></a>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              <p>The API for connecting the flashcards project to the database storing the words. Uses Node, Express and Mongoose.
+              </p> 
             </div>
           </div>
         </div>
@@ -68,7 +83,7 @@
       <section id='contact-me'>
       <div class='contact-me-container'>   
           <div class='about-me'>
-          <h3>About me and Languages</h3>
+          <h2>About me and Languages</h2>
           <p>Originally from Scotland, I moved to Mainz in 2016. I started learning to code in 2020 and have learned a lot since then. I started with javascript and moved onto React, which is my primary language. <br> I’ve also learnt the basics of node and have created a fully functional API, connecting to a database, for my Flashcards project.  
             <p>
             Here are some of the languages I’ve learnt:
